@@ -1,0 +1,52 @@
+ <header class="header">
+  <div class="container">
+    <img src="img/logo-asfenergie.png" alt="Logo ASF Energie" class="logo" />
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="realisations.html">Nos réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="devis">Devis gratuit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+ <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Prise de rendez-vous - AsfEnergie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="form-section">
+    <h2>Prise de rendez-vous en ligne</h2>
+    <form action="#" method="post" class="styled-form">
+      <label for="date">Choisissez une date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="heure">Heure</label>
+      <input type="time" id="heure" name="heure" required>
+
+      <label for="commentaire">Commentaire</label>
+      <textarea id="commentaire" name="commentaire" rows="5" placeholder="Votre commentaire..."></textarea>
+
+      <button type="submit" class="btn-yellow">Valider la demande</button>
+    </form>
+  </section>
+<script>
+  const form = document.querySelector('.styled-form');
+  const dateInput = document.getElementById('date');
+  const timeInput = document.getElementById('heure');
+  const commentInput = document.getElementById('commentaire');
+  const submitBtn = form.querySelector('button');
+
+  form.addEventListener('submit', function (e) {
+    if (!dateInput.value || !timeInput.value || !commentInput.value.trim()) {
+      e.preventDefault(); // Bloquea el envío
+      alert("Merci de remplir tous les champs avant de valider la demande.");
+    }
+  });
+</script>
+

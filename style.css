@@ -1,0 +1,670 @@
+/* Paleta AquaClim */
+:root {
+  --orange: #F26C21;
+  --blue: #5881C1;
+  --white: #ffffff;
+  --dark: #1f1f1f;
+  --light: #f9f9f9;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: var(--blue);
+}
+
+.logo-img {
+  height: 200px;
+  margin-right: 200px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.site-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.asf {
+  color: var(--yelow);
+}
+
+.energie {
+  color: var(--white);
+}
+
+.services {
+  font-size: 0.7em;
+  color: var(--black);
+  margin-left: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-devis {
+  background-color: var(--orange);
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+footer {
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1em;
+  margin-top: 4em;
+}
+/* Header */
+.header {
+  background-color: #eafce0; /* fondo verde claro */
+  padding: 0.5em 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 110px; /* Ajusta el tamaño del logo */
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #001744;
+  font-weight: bold;
+}
+
+.nav a.devis {
+  background-color: #FFD700;
+  padding: 0.4em 1em;
+  border-radius: 5px;
+  color: #000;
+}
+/* 🌈 PALETA DE COULEURS - AquaClim */
+:root {
+  --orange: #F26C21;
+  --blue: #5881C1;
+  --green-light: #EDF9CC;
+  --white: #ffffff;
+  --gray-light: #f9f9f9;
+  --gray-dark: #333333;
+  --black: #000000;
+}
+
+/* 🌐 BASE */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--white);
+  color: var(--gray-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--blue);
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin: 0.5em 0 1.5em;
+}
+
+/* 🔝 HEADER */
+.header {
+  background-color: #e5f9
+  padding 0.8em 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.logo {
+  height: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--gray-dark);
+}
+
+nav a.devis {
+  background-color: var(--orange);
+  color: var(--black);
+  padding: 0.4em 1em;
+  border-radius: 5px;
+}
+
+/* 🏠 HERO SECTION */
+.hero {
+  background-image: url('img/prairie-verte.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 6em 2em;
+  color: white;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2em;
+  color: var(--blue);
+  margin-bottom: 0.3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: var(--gray-dark);
+}
+
+.btn-hero {
+  background: var(--orange);
+  color: var(--black);
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1.2em;
+}
+
+/* 🧾 PRESENTATION */
+.about-section {
+  text-align: center;
+  padding: 3em 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  color: #5781C2; /* azul acorde con tu diseño */
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  color: #222;
+  line-height: 1.6;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* 🧰 SERVICES */
+.services {
+  background-color: var(--gray-light);
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.service-box {
+  background: var(--white);
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-weight: bold;
+  color: var(--blue);
+}
+
+/* 🖼️ REALISATIONS */
+.realisations {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+/* 💬 TESTIMONIALS */
+.testimonials {
+  background-color: #f1f8ff;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  color: var(--gray-dark);
+  border-left: 4px solid var(--blue);
+  padding-left: 1em;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* 📞 CTA Contact */
+.contact-cta {
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 4em 2em;
+}
+
+.contact-cta h2 {
+  color: var(--white);
+}
+
+.contact-cta .btn-hero {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+/* 👣 FOOTER */
+footer {
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5em 1em;
+}
+.services {
+  padding: 4em 2em;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.2em;
+  color: #4578c5;
+  margin-bottom: 2em;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2em;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #002c5f;
+  margin-bottom: 0.5em;
+}
+
+.service-card p {
+  color: #444;
+  font-size: 1em;
+}
+.service-grid.center-two {
+  justify-content: center;
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+}
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em auto;
+  max-width: 1200px;
+}
+
+.center-row {
+  justify-content: center;
+}
+.services {
+  padding: 4em 2em;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2em;
+  color: #4d77c2;
+  margin-bottom: 2em;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #f5f9fd
+  padding 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #002060;
+  margin-bottom: 0.5em;
+  font-size: 1.1em;
+}
+
+.service-card p {
+  font-size: 0.95em;
+  color: #333;
+}
+.realisations-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.btn-block {
+  display: block;
+  background-color: #004fa2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.btn-block:hover {
+  background-color: #0066cc;
+}
+.contact-section {
+  padding: 4em 2em;
+  background-color: #f9f9f9;
+}
+
+.contact-section .container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5em;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #5781C2;
+}
+
+.btn-orange {
+  background-color: #ffc800;
+  color: white;
+  padding: 0.9em 2em;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-orange:hover {
+  background-color: #d84e04;
+}
+.realisations-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.btn-block {
+  display: block;
+  background-color: #004fa2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.btn-block:hover {
+  background-color: #0066cc;
+}
+.demande-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 400px;
+  margin: 50px auto;
+}
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.btn-hero {
+  background: var(--orange);
+  color: var(--black);
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.form-section {
+  padding: 4em 2em;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.form-section h2 {
+  font-size: 2em;
+  color: var(--blue);
+  margin-bottom: 1.5em;
+}
+
+.styled-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.styled-form label {
+  display: block;
+  margin: 1em 0 0.3em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.styled-form input,
+.styled-form textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.styled-form textarea {
+  resize: vertical;
+}
+
+.btn-yellow {
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #ffd000;
+}
+.marques {
+  background-color: white;
+  padding: 2em 0;
+  overflow: hidden;
+}
+
+.marques-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  gap: 2em;
+  animation: defilement 20s linear infinite;
+}
+
+.slide-track img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes defilement {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.avis {
+  background-color: #f5f5f5;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.avis h2 {
+  font-size: 2em;
+  color: var(--blue);
+  margin-bottom: 1em;
+}
+
+.avis-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.avis-form input,
+.avis-form select,
+.avis-form textarea {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.avis-form button {
+  background-color: var(--orange);
+  color: #000;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
