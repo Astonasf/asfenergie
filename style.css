@@ -736,3 +736,77 @@ footer {
   font-size: 1rem;
   border-bottom: 1px solid #ffeeba;
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    gap: 1em;
+  }
+
+  nav a.devis {
+    margin-top: 1em;
+    padding: 0.8em 1em;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+    padding: 0 1em;
+  }
+
+  .hero p {
+    font-size: 1em;
+    padding: 0 1em;
+  }
+
+  .btn-hero {
+    font-size: 1em;
+    padding: 0.8em 1.2em;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .about-section {
+    padding: 2em 1em;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel {
+    width: 90%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    padding: 1em;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
