@@ -616,7 +616,7 @@ footer {
 .slide-track {
   display: flex;
   gap: 2em;
-  animation: defilement 20s linear infinite;
+  animation: defilement 15s linear infinite;
 }
 
 .slide-track img {
