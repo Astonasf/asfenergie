@@ -762,6 +762,12 @@ footer {
   height: 220px;
   object-fit: cover;
   display: block;
+  cursor: zoom-in;
+  transition: opacity 0.2s ease;
+}
+
+.gallery-item img:hover {
+  opacity: 0.9;
 }
 
 .gallery-item figcaption {
@@ -770,6 +776,66 @@ footer {
   font-size: 0.95em;
   color: var(--gray-dark);
   font-weight: bold;
+}
+
+.gallery-copyright {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.85em;
+  font-style: italic;
+  color: #777;
+  max-width: 700px;
+  margin: 0 auto 2em;
+}
+
+/* 🔍 LIGHTBOX (agrandir une photo de la galerie) */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 1.5em;
+}
+
+.lightbox-overlay.active {
+  display: flex;
+}
+
+.lightbox-overlay img {
+  max-width: 92%;
+  max-height: 85vh;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.2em;
+  right: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.4em;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2em 0.4em;
+}
+
+.lightbox-close:hover {
+  color: var(--orange);
+}
+
+@media (max-width: 768px) {
+  .lightbox-overlay {
+    padding: 4em 1em 1.5em;
+  }
+  .lightbox-close {
+    top: 0.6em;
+    right: 0.8em;
+  }
 }
 .info-banner {
   background-color: #fff3cd; /* amarillo suave */
@@ -853,12 +919,4 @@ footer {
     width: 100%;
     margin-bottom: 1em;
   }
-}
-.gallery-copyright {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 0.85em;
-  font-style: italic;
-  color: #777;
-  max-width: 700px;
-  margin: 0 auto 2em;
 }
