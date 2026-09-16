@@ -854,3 +854,11 @@ footer {
     margin-bottom: 1em;
   }
 }
+.gallery-copyright {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.85em;
+  font-style: italic;
+  color: #777;
+  max-width: 700px;
+  margin: 0 auto 2em;
+}
