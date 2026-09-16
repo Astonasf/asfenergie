@@ -727,6 +727,50 @@ footer {
 .realisations-page {
   background-color: #e9fcd5;
 }
+/* 📷 GALERIE DE RÉALISATIONS (pages services) */
+.gallery-section {
+  padding: 4em 2em;
+  background-color: var(--gray-light);
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2em;
+  color: var(--blue);
+  margin-bottom: 1em;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2em;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  margin: 0;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item figcaption {
+  padding: 0.9em 1.1em;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95em;
+  color: var(--gray-dark);
+  font-weight: bold;
+}
 .info-banner {
   background-color: #fff3cd; /* amarillo suave */
   color: #856404; /* marrón oscuro */
