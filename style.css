@@ -115,20 +115,28 @@ footer {
 }
 
 .nav a.devis {
-  background-color: #FFD700;
+  background-color: #F26C21;
   padding: 0.4em 1em;
   border-radius: 5px;
-  color: #000;
+  color: #fff;
+  transition: background-color 0.3s;
 }
-/* 🌈 PALETA DE COULEURS - AquaClim */
+
+.nav a.devis:hover {
+  background-color: #C8540E;
+}
+/* 🌈 PALETA DE COULEURS - AsfEnergie (unifiée) */
 :root {
   --orange: #F26C21;
-  --blue: #5881C1;
+  --orange-dark: #C8540E;
+  --blue: #2E6DA4;
+  --blue-dark: #1F4D78;
   --green-light: #EDF9CC;
   --white: #ffffff;
-  --gray-light: #f9f9f9;
+  --gray-light: #F4F6F1;
   --gray-dark: #333333;
   --black: #000000;
+  --good: #3E8E5B;
 }
 
 /* 🌐 BASE */
@@ -152,8 +160,9 @@ p {
 
 /* 🔝 HEADER */
 .header {
-  background-color: #e5f9
-  padding 0.8em 0;
+  background-color: var(--white);
+  padding: 0.8em 0;
+  border-bottom: 1px solid #eceee7;
 }
 
 .header-container {
@@ -192,7 +201,7 @@ nav a.devis {
 
 /* 🏠 HERO SECTION */
 .hero {
-  background-image: url('img/prairie-verte.png');
+  background-image: linear-gradient(180deg, rgba(15,25,32,.25) 0%, rgba(15,25,32,.72) 100%), url('img/prairie-verte.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -202,15 +211,22 @@ nav a.devis {
   position: relative;
 }
 
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .hero h1 {
   font-size: 2em;
-  color: var(--blue);
+  color: var(--white);
   margin-bottom: 0.3em;
+  text-shadow: 0 2px 14px rgba(0,0,0,.45);
 }
 
 .hero p {
   font-size: 1.2em;
-  color: var(--gray-dark);
+  color: #f2f2f2;
+  text-shadow: 0 1px 8px rgba(0,0,0,.4);
 }
 
 .btn-hero {
@@ -401,8 +417,8 @@ footer {
 }
 
 .service-card {
-  background: #f5f9fd
-  padding 1.5em;
+  background: #f5f9fd;
+  padding: 1.5em;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   text-align: left;
@@ -433,18 +449,19 @@ footer {
 
 .btn-block {
   display: block;
-  background-color: #004fa2;
+  background-color: var(--blue);
   color: white;
   text-align: center;
   padding: 20px;
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: 10px;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .btn-block:hover {
-  background-color: #0066cc;
+  background-color: var(--blue-dark);
+  transform: translateY(-3px);
 }
 .contact-section {
   padding: 4em 2em;
@@ -484,45 +501,23 @@ footer {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #5781C2;
+  border-color: var(--blue);
 }
 
 .btn-orange {
-  background-color: #ffc800;
-  color: white;
+  background-color: var(--orange);
+  color: var(--white);
   padding: 0.9em 2em;
   font-weight: bold;
   font-size: 1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btn-orange:hover {
-  background-color: #d84e04;
-}
-.realisations-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 400px;
-  margin: 50px auto;
-}
-
-.btn-block {
-  display: block;
-  background-color: #004fa2;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background 0.3s;
-}
-
-.btn-block:hover {
-  background-color: #0066cc;
+  background-color: var(--orange-dark);
 }
 .demande-options {
   display: flex;
@@ -588,8 +583,8 @@ footer {
 }
 
 .btn-yellow {
-  background-color: var(--yellow);
-  color: var(--black);
+  background-color: var(--orange);
+  color: var(--white);
   padding: 0.8em 1.5em;
   border: none;
   border-radius: 5px;
@@ -600,7 +595,7 @@ footer {
 }
 
 .btn-yellow:hover {
-  background-color: #ffd000;
+  background-color: var(--orange-dark);
 }
 .marques {
   background-color: white;
@@ -669,11 +664,12 @@ footer {
   cursor: pointer;
 }
 .contact-section {
-  background-color: #e9fcd5;
+  background-color: var(--white);
   padding: 4em 2em;
   max-width: 700px;
   margin: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.06);
 }
 
 .contact-section h1 {
@@ -710,8 +706,8 @@ footer {
 }
 
 .btn-yellow {
-  background-color: #ffd500;
-  color: black;
+  background-color: var(--orange);
+  color: var(--white);
   font-weight: bold;
   border: none;
   padding: 1em 2em;
@@ -722,10 +718,10 @@ footer {
 }
 
 .btn-yellow:hover {
-  background-color: #f2c100;
+  background-color: var(--orange-dark);
 }
 .realisations-page {
-  background-color: #e9fcd5;
+  background-color: var(--gray-light);
 }
 /* 📷 GALERIE DE RÉALISATIONS (pages services) */
 .gallery-section {
@@ -918,5 +914,195 @@ footer {
   textarea {
     width: 100%;
     margin-bottom: 1em;
+  }
+}
+
+/* ============================================
+   ✅ AMÉLIORATIONS — bandeau de confiance, bouton
+   WhatsApp, animations d'apparition, cartes photo
+   ============================================ */
+
+/* 📊 Bandeau de confiance (sous le hero) */
+.trust-bar {
+  background-color: var(--white);
+  border-bottom: 1px solid #eceee7;
+}
+
+.trust-bar .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5em;
+  padding: 1.6em 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  text-align: left;
+}
+
+.trust-item .trust-num {
+  font-size: 1.6em;
+  font-weight: 800;
+  color: var(--orange);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.trust-item .trust-label {
+  font-size: 0.82em;
+  color: var(--gray-dark);
+  max-width: 12em;
+  line-height: 1.25;
+}
+
+/* 💬 Bouton flottant WhatsApp */
+.fab-wa {
+  position: fixed;
+  right: 1.2em;
+  bottom: 1.2em;
+  width: 58px;
+  height: 58px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,.28);
+  z-index: 900;
+  transition: transform 0.2s ease;
+}
+
+.fab-wa:hover {
+  transform: scale(1.08);
+}
+
+.fab-wa svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* 🌊 Animation d'apparition au défilement */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* 🖼️ Cartes photo — page "Nos réalisations" */
+.real-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+  max-width: 800px;
+  margin: 3em auto;
+  padding: 0 2em;
+}
+
+.real-card {
+  position: relative;
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,.15);
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.real-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(0,0,0,.22);
+}
+
+.real-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,25,32,0) 45%, rgba(15,25,32,.78) 100%);
+}
+
+.real-card span {
+  position: absolute;
+  z-index: 1;
+  left: 1em;
+  bottom: 0.9em;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.05em;
+  text-shadow: 0 1px 6px rgba(0,0,0,.4);
+}
+
+/* 📱 RESPONSIVE — passe corrigée (le header/nav réels sont dans .container) */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    gap: 0.8em;
+    padding: 0.8em 1em;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8em 1.2em;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .hero {
+    padding: 4em 1.2em;
+  }
+
+  .services-grid,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .real-cards {
+    grid-template-columns: 1fr;
+    padding: 0 1.2em;
+  }
+
+  .trust-bar .container {
+    gap: 1.2em;
+    padding: 1.2em;
+  }
+
+  .contact-cta .container {
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+  }
+
+  .fab-wa {
+    right: 0.9em;
+    bottom: 0.9em;
+    width: 52px;
+    height: 52px;
   }
 }
