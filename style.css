@@ -192,6 +192,16 @@ p {
   height: 80px;
 }
 
+.logo-link {
+  display: inline-flex;
+  line-height: 0;
+  transition: opacity 0.2s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.85;
+}
+
 nav ul {
   list-style: none;
   display: flex;
