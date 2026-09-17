@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réalisations - Climatisation - AsfEnergie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <img src="img/logo-asfenergie1.png" alt="Logo ASF Energie" class="logo" />
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="realisations.html">Nos réalisations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="devis-ou-rdv.html" class="devis">Devis gratuit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="gallery-section">
+    <h2>Climatisation</h2>
+    <p class="gallery-copyright">(Photos prises sur nos propres chantiers — © AsfEnergie, tous droits réservés. Reproduction et réutilisation interdites sans autorisation.)</p>
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-1.jpg" alt="Unité intérieure Fujitsu – salon avec rideaux" loading="lazy" />
+        <figcaption>Unité intérieure Fujitsu – salon avec rideaux</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-2.jpg" alt="Unité intérieure Fujitsu Atlantic – couloir" loading="lazy" />
+        <figcaption>Unité intérieure Fujitsu Atlantic – couloir</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-3.jpg" alt="Unité intérieure Ariston – cuisine" loading="lazy" />
+        <figcaption>Unité intérieure Ariston – cuisine</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-4.jpg" alt="Présentoir climatiseurs Midea" loading="lazy" />
+        <figcaption>Présentoir climatiseurs Midea</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-5.jpg" alt="Unité intérieure Carrier – couloir bois" loading="lazy" />
+        <figcaption>Unité intérieure Carrier – couloir bois</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-6.jpg" alt="Unité intérieure Carrier – vue couloir" loading="lazy" />
+        <figcaption>Unité intérieure Carrier – vue couloir</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-7.jpg" alt="Unité extérieure Sinclair – terrasse pierre" loading="lazy" />
+        <figcaption>Unité extérieure Sinclair – terrasse pierre</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-8.jpg" alt="Unité extérieure Sinclair – façade bois" loading="lazy" />
+        <figcaption>Unité extérieure Sinclair – façade bois</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-9.jpg" alt="Unité extérieure Sinclair – façade enduit" loading="lazy" />
+        <figcaption>Unité extérieure Sinclair – façade enduit</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-10.jpg" alt="Unité intérieure Sinclair – chambre" loading="lazy" />
+        <figcaption>Unité intérieure Sinclair – chambre</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-11.jpg" alt="Climatisation restaurant indien" loading="lazy" />
+        <figcaption>Climatisation restaurant indien</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-12.jpg" alt="Installation climatisation cave à vin" loading="lazy" />
+        <figcaption>Installation climatisation cave à vin</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-13.jpg" alt="Climatisation salle de réunion" loading="lazy" />
+        <figcaption>Climatisation salle de réunion</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-14.jpg" alt="Installation Heiwa – terrasse et intérieur" loading="lazy" />
+        <figcaption>Installation Heiwa – terrasse et intérieur</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-15.jpg" alt="Unité extérieure Heiwa – toiture" loading="lazy" />
+        <figcaption>Unité extérieure Heiwa – toiture</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="img/climatisation-realisation-16.jpg" alt="Unité extérieure Heiwa – bâtiment industriel" loading="lazy" />
+        <figcaption>Unité extérieure Heiwa – bâtiment industriel</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 AsfEnergie - Tous droits réservés</p>
+</footer>
+
+<div id="lightbox" class="lightbox-overlay">
+  <button class="lightbox-close" aria-label="Fermer">&times;</button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<script>
+  (function () {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    var closeBtn = lightbox.querySelector('.lightbox-close');
+
+    document.querySelectorAll('.gallery-item img').forEach(function (img) {
+      img.addEventListener('click', function () {
+        lightboxImg.src = this.src;
+        lightboxImg.alt = this.alt;
+        lightbox.classList.add('active');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  })();
+</script>
+
+</body>
+</html>
