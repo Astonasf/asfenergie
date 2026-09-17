@@ -961,19 +961,26 @@ footer {
 }
 
 /* 💬 Bouton flottant WhatsApp */
-.fab-wa {
+.fab-wa-wrap {
   position: fixed;
   right: 1.2em;
   bottom: 1.2em;
+  z-index: 900;
+}
+
+.fab-wa {
+  position: relative;
   width: 58px;
   height: 58px;
   background-color: #25D366;
+  border: none;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 16px rgba(0,0,0,.28);
-  z-index: 900;
+  cursor: pointer;
+  padding: 0;
   transition: transform 0.2s ease;
 }
 
@@ -984,6 +991,54 @@ footer {
 .fab-wa svg {
   width: 30px;
   height: 30px;
+}
+
+.fab-popup {
+  position: absolute;
+  right: 0;
+  bottom: 72px;
+  background: var(--white, #fff);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.22);
+  padding: 0.85em 1.1em;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.fab-popup.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.fab-popup::after {
+  content: '';
+  position: absolute;
+  right: 22px;
+  bottom: -8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--white, #fff);
+}
+
+.fab-popup-label {
+  margin: 0 0 0.2em;
+  font-size: 0.78rem;
+  color: #666;
+}
+
+.fab-popup-number {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--blue-dark, #1F4D78);
+  letter-spacing: 0.5px;
 }
 
 /* 🌊 Animation d'apparition au défilement */
