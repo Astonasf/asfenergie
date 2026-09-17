@@ -1,3 +1,17 @@
+/* 📱 Réinitialisation globale — évite les débordements horizontaux sur mobile */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Paleta AquaClim */
 :root {
   --orange: #F26C21;
